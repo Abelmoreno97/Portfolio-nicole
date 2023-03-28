@@ -169,7 +169,7 @@ function App() {
         position="fixed"
       >
         <a id="link" className="volver-arriba" href="#">
-          Abel Moreno
+          ACERCA DE
         </a>
         <a id="link" className="scroll-suave" href="#sec2">
           PROYECTOS
@@ -268,7 +268,7 @@ function App() {
 
       {/* FRENTE */}
       <VStack id="section-1" zIndex="1" h="1024px" w="1000px">
-        <Image src={nombre} w="488px" h="192px" mt="204px" mb="80px"></Image>
+        <Image src={nombre} w="497px" h="192px" mt="204px" mb="80px"></Image>
         <Image src={about} w="237px" h="237px"></Image>
         <Heading
           color="#9C6FB7">
@@ -294,7 +294,7 @@ Nivel de Inglés: C2 (Proficient).
               borderRadius="20px"
               _hover={{
                 backgroundColor: "whiteAlpha.500",
-                transform: "scale(1.20)",
+                transform: "scale(1.10)",
                 transition: "all 0.3s ease",
               }}
             >
@@ -316,7 +316,7 @@ Nivel de Inglés: C2 (Proficient).
               borderRadius="20px"
               _hover={{
                 backgroundColor: "whiteAlpha.500",
-                transform: "scale(1.20)",
+                transform: "scale(1.10)",
                 transition: "all 0.3s ease",
               }}
             >
@@ -344,7 +344,7 @@ Nivel de Inglés: C2 (Proficient).
               borderRadius="20px"
               _hover={{
                 backgroundColor: "whiteAlpha.500",
-                transform: "scale(1.20)",
+                transform: "scale(1.10)",
                 transition: "all 0.3s ease",
               }}
             >
@@ -369,7 +369,7 @@ Nivel de Inglés: C2 (Proficient).
               borderRadius="20px"
               _hover={{
                 backgroundColor: "whiteAlpha.500",
-                transform: "scale(1.20)",
+                transform: "scale(1.10)",
                 transition: "all 0.3s ease",
               }}
             >
@@ -715,7 +715,7 @@ Nivel de Inglés: C2 (Proficient).
               height="200px"
               src={Exp1}
             ></Img>
-            <Text fontSize="25px" textAlign="center">
+            <Text fontSize="20px" padding="10px" textAlign="start">
              Diseñadora grafica:<br></br>
              * Arte Digital.<br></br>
              * Adaptacion a los cambios.
@@ -733,7 +733,7 @@ Nivel de Inglés: C2 (Proficient).
               height="200px"
               src={Exp2}
             ></Img>
-            <Text fontSize="25px" textAlign="center">
+            <Text fontSize="20px" padding="10px" textAlign="start">
               Polleria Plumitas: <br></br>
               * Acencion al cliente.<br></br>
               * Responsabilidad.<br></br>* Compromiso.<br></br>
@@ -780,7 +780,7 @@ Nivel de Inglés: C2 (Proficient).
               src={cert2}
             ></Img>
             <Text textAlign="center">
-              EF SET English Certificate 39/100 (A2 Elementary)
+              EF SET English Certificate 77/100 (C2 Proficient)
             </Text>
           </Box>
           <Box
