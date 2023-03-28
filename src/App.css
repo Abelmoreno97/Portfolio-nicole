@@ -4,16 +4,17 @@
 }
 
 #nav.scrolled {
-  background-color:#D0A2ED;
+  background-color:#447CBE;
 }
 #link {
 font-style: normal;
-  color:white;
+  color:#7FF4BC;
+  ;
   font-size: 20px;
   transition: all 0.3s ease;
 }
 #link:hover {
   font-style: italic;
-color: black;
+color:#dbffee;
   font-size: 27px;
 }

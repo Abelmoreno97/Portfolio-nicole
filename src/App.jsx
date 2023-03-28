@@ -27,13 +27,14 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@chakra-ui/icons";
 import foto from "./assets/image.png";
 import nombre from "./assets/image2.png";
 import about from "./assets/image3.png";
-import Fondovioleta from "./assets/image4.png";
+import Fondoverdeagua from "./assets/image4.png";
+import Fondonaranja from "./assets/image6.png";
 import footer from "./assets/image5.png";
 import fot1 from "./assets/fot1.png";
 import fot2 from "./assets/fot2.png";
 import fot3 from "./assets/fot3.png";
 import fot4 from "./assets/fot 4.png";
-import proy1 from "./assets/proy1.jpg";
+import proy1 from "./assets/proy1.png";
 import proy2 from "./assets/proy2.png";
 import proy3 from "./assets/proy3.png";
 import proy4 from "./assets/proy4.png";
@@ -56,9 +57,8 @@ import Te16 from "./assets/Te16.png";
 import Te17 from "./assets/Te17.png";
 import Te18 from "./assets/Te18.png";
 
-import Exp1 from "./assets/exp1.jpg";
+import Exp1 from "./assets/exp1.png";
 import Exp2 from "./assets/exp2.png";
-import Exp3 from "./assets/exp3.jpg";
 import cert1 from "./assets/Cert1.png";
 import cert2 from "./assets/Cert2.png";
 import cert3 from "./assets/Cert3.png";
@@ -198,7 +198,7 @@ function App() {
 
         <Image
           top="1045px"
-          src={Fondovioleta}
+          src={Fondoverdeagua}
           alt="My Image"
           height="1030px"
           width="100%"
@@ -236,7 +236,7 @@ function App() {
         ></Heading>
         <Image
           top="3110px"
-          src={Fondovioleta}
+          src={Fondonaranja}
           alt="My Image"
           height="1030px"
           width="100%"
@@ -246,7 +246,7 @@ function App() {
         />
         <Image
           top="3530px"
-          src={Fondovioleta}
+          src={Fondonaranja}
           alt="My Image"
           height="1030px"
           width="100%"
@@ -270,141 +270,156 @@ function App() {
       <VStack id="section-1" zIndex="1" h="1024px" w="1000px">
         <Image src={nombre} w="488px" h="192px" mt="204px" mb="80px"></Image>
         <Image src={about} w="237px" h="237px"></Image>
+        <Heading
+          color="#9C6FB7">
+          Acerca de
+        </Heading>
         <Text textAlign="center" width="830px" fontSize="20px">
-          Full Stack Developer con background en administración contable y
-          técnico en automotores que me ayudaron a tomar decisiones estratégicas
-          y relacionarme en un entorno empresarial. Conocimientos en
-          metodologías ágiles, GIT, estructura de datos, algoritmos y frameworks
-          CSS. Tengo experiencia en desarrollo de Front End y Back End con SQL,
-          HTML, CSS, ChakraUI como framework favorito, Javascript, Typescript,
-          NodeJS, EXPRESS, React, React-Native, Redux, entre otros. Con
-          creatividad para resolver problemas, iniciativa y compromiso con mi
-          trabajo. Nivel de Inglés: A2 (elementary).
+        Full Stack Developer con background en Diseño Gráfico donde aprendí a adaptarme al requerimiento del cliente sobre la marcha, así como habilidades artísticas y de creatividad.<br></br>
+
+Conocimientos en metodologías ágiles, GIT, estructura de datos, algoritmos, frameworks CSS, Adobe Photoshop, Adobe illustrator y programas de edición de audio y videos. Tengo experiencia en desarrollo de Front End y Back End con SQL, HTML, CSS, ChakraUI, Javascript, NodeJS, EXPRESS, React, React-Native, Redux, entre otros.<br></br>
+
+Con capacidad de mantener un ambiente de trabajo organizado, adaptarme a diversos entornos y comprometerme con el trabajo.
+
+Nivel de Inglés: C2 (Proficient).
         </Text>
       </VStack>
       <VStack id="section-2" gap="10px" zIndex="1" h="1024px" w="1000px">
-        <Heading fontSize="40px" color="white" mt="90px" mb="10px">
+        <Heading fontSize="40px" color="#447CBE" mt="90px" mb="10px">
           PROYECTOS
         </Heading>
         <HStack justifyContent="space-between" width="830px">
           <a target="_blank" href="https://foods.up.railway.app/">
-          <VStack
-            borderRadius="20px"
-            _hover={{
-              backgroundColor: "whiteAlpha.500",
-              transform: "scale(1.20)",
-              transition: "all 0.3s ease",
-            }}
-          >
-            <Box w="320px" h="290px">
-              <Img
-                borderRadius="20px"
-                width="100%"
-                height="100%"
-                src={proy1}
-              ></Img>
-            </Box>
-            <Text textAlign="center" w="343px">
-              "FoodsApp" PI de henry, aplicacion para obtener recetas desde la
-              API de Spoonacular.
-            </Text>
-          </VStack>
+            <VStack
+              borderRadius="20px"
+              _hover={{
+                backgroundColor: "whiteAlpha.500",
+                transform: "scale(1.20)",
+                transition: "all 0.3s ease",
+              }}
+            >
+              <Box w="320px" h="290px">
+                <Img
+                  borderRadius="20px"
+                  width="100%"
+                  height="100%"
+                  src={proy1}
+                ></Img>
+              </Box>
+              <Text color="#DA6B6B" fontSize="30px" textAlign="center" w="343px">
+               My Pokédex
+              </Text>
+            </VStack>
           </a>
-            <a target="_blank" href="https://henry-pf-front.vercel.app/">
-          <VStack
-            borderRadius="20px"
-            _hover={{
-              backgroundColor: "whiteAlpha.500",
-              transform: "scale(1.20)",
-              transition: "all 0.3s ease",
-            }}
-          >
-            <Box w="320px" h="290px">
-              {" "}
-              <Img
-                borderRadius="20px"
-                width="100%"
-                height="100%"
-                src={proy2}
-              ></Img>
-            </Box>
-            <Text textAlign="center" w="343px">
-              "HenryGameON" PF de henry, aplicacion plataforma de jugos
-              educativos de programacion y documentacion social.
-            </Text>
-          </VStack>
-            </a>
+          <a target="_blank" href="https://henry-pf-front.vercel.app/">
+            <VStack
+              borderRadius="20px"
+              _hover={{
+                backgroundColor: "whiteAlpha.500",
+                transform: "scale(1.20)",
+                transition: "all 0.3s ease",
+              }}
+            >
+              <Box w="320px" h="290px">
+                {" "}
+                <Img
+                  borderRadius="20px"
+                  width="100%"
+                  height="100%"
+                  src={proy2}
+                ></Img>
+              </Box>
+              <Text color="#DA6B6B" fontSize="30px" textAlign="center" w="343px">
+               Henry GameON
+              </Text>
+            </VStack>
+          </a>
         </HStack>
         <HStack justifyContent="space-between" width="830px">
-          <a target="_blank" href="https://www.figma.com/file/iuyz0eXd9MVXr03tHYsVTP/Portfolio-Nicole?node-id=2-2&t=xXia3H3UIHrubmAt-0">
-          <VStack
-            borderRadius="20px"
-            _hover={{
-              backgroundColor: "whiteAlpha.500",
-              transform: "scale(1.20)",
-              transition: "all 0.3s ease",
-            }}
+        <a
+            target="_blank"
+            href="https://www.figma.com/file/HaHM7NwaJeSCB5kDn11yM2/Portfolio-Abel?node-id=1-2&t=6x7RsMFQjVr1Bd7D-0"
           >
-            <Box w="320px" h="290px">
-              <Img
-                borderRadius="20px"
-                width="100%"
-                height="100%"
-                src={proy3}
-              ></Img>
-            </Box>
-            <Text textAlign="center" w="343px">
-              Portfolio de Nicole. colaboramos en equipo para realizar nuestros
-              portfolio y ambos cumplimos roles de owner y proveedor. Conmigo en
-              frontend con React y ella en UX/UI con Figma.
-            </Text>
-          </VStack>
+            <VStack
+              borderRadius="20px"
+              _hover={{
+                backgroundColor: "whiteAlpha.500",
+                transform: "scale(1.20)",
+                transition: "all 0.3s ease",
+              }}
+            >
+              <Box w="320px" h="290px">
+                <Img
+                  borderRadius="20px"
+                  width="100%"
+                  height="100%"
+                  src={proy4}
+                ></Img>
+              </Box>
+              <Text color="#DA6B6B" fontSize="30px" textAlign="center" w="343px">
+               Portfolio Abel
+              </Text>
+            </VStack>
           </a>
-          <a target="_blank" href="https://www.figma.com/file/HaHM7NwaJeSCB5kDn11yM2/Portfolio-Abel?node-id=1-2&t=6x7RsMFQjVr1Bd7D-0">
-          <VStack
-            borderRadius="20px"
-            _hover={{
-              backgroundColor: "whiteAlpha.500",
-              transform: "scale(1.20)",
-              transition: "all 0.3s ease",
-            }}
+          <a
+            target="_blank"
+            href="https://www.figma.com/file/iuyz0eXd9MVXr03tHYsVTP/Portfolio-Nicole?node-id=2-2&t=xXia3H3UIHrubmAt-0"
           >
-            <Box w="320px" h="290px">
-              <Img
-                borderRadius="20px"
-                width="100%"
-                height="100%"
-                src={proy4}
-              ></Img>
-            </Box>
-            <Text textAlign="center" w="343px">
-              Portfolio de Abel. colaboramos en equipo para realizar nuestros
-              portfolio y ambos cumplimos roles de owner y proveedor. Conmigo en
-              frontend con React y ella en UX/UI con Figma.
-            </Text>
-          </VStack>
+            <VStack
+              borderRadius="20px"
+              _hover={{
+                backgroundColor: "whiteAlpha.500",
+                transform: "scale(1.20)",
+                transition: "all 0.3s ease",
+              }}
+            >
+              <Box w="320px" h="290px">
+                <Img
+                  borderRadius="20px"
+                  width="100%"
+                  height="100%"
+                  src={proy3}
+                ></Img>
+              </Box>
+              <Text color="#DA6B6B" fontSize="30px" textAlign="center" w="343px">
+              Mi Portfolio
+              </Text>
+            </VStack>
           </a>
+          
         </HStack>
-        <HStack color="#FFFFFF" gap="70px">
-          <ArrowLeftIcon _hover={{
+        <HStack color="#447CBE" gap="70px">
+          <ArrowLeftIcon
+            _hover={{
               transform: "scale(1.65)",
               transition: "all 0.3s ease",
-            }} boxSize={8} /> <Text  _hover={{
+            }}
+            boxSize={8}
+          />{" "}
+          <Text
+            _hover={{
               transform: "scale(1.65)",
               transition: "all 0.3s ease",
-            }} fontSize="40px">1</Text>{" "}
-          <ArrowRightIcon  _hover={{
+            }}
+            fontSize="40px"
+          >
+            1
+          </Text>{" "}
+          <ArrowRightIcon
+            _hover={{
               transform: "scale(1.65)",
               transition: "all 0.3s ease",
-            }} boxSize={8} />{" "}
+            }}
+            boxSize={8}
+          />{" "}
         </HStack>
       </VStack>
       <VStack zIndex="1" gap="15px" h="1024px" w="1000px">
         <Heading mt="110px" mb="10px" color="#9C6FB7" fontSize="40px">
           SKILLS
         </Heading>
-        <Heading mb="20px" fontSize="35px" fontWeight="normal">
-          TECH SKILLS
+        <Heading mb="20px" fontSize="35px" color="#DA6B6B" fontWeight="normal">
+          TECNOLOGIAS
         </Heading>
 
         <SimpleGrid columns={6} spacing={19}>
@@ -580,8 +595,8 @@ function App() {
             ></Img>
           </Box>
         </SimpleGrid>
-        <Heading mb="20px" fontSize="35px" fontWeight="normal">
-          SOFT SKILLS
+        <Heading color="#DA6B6B" mb="20px" fontSize="35px" fontWeight="normal">
+          HABILIDADES BLANDAS
         </Heading>
 
         <SimpleGrid columns={4} spacing={19}>
@@ -589,90 +604,91 @@ function App() {
             _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
             textAlign="center"
             p="13px"
-            bg="#D0A2ED"
+            bg="#EAC9FF"
             borderRadius="15px"
             height="65px"
             width="235px"
           >
             {" "}
-            <Text fontSize="25px">INGENIO</Text>{" "}
+            <Text color="#DA6B6B" fontSize="25px">INGENIO</Text>{" "}
+          </Box>
+          <Box
+          
+            _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
+            textAlign="center"
+            p="13px"
+            bg="#E7EDA2"
+            borderRadius="15px"
+            height="65px"
+            width="235px"
+          >
+            <Text color="#DA6B6B" fontSize="25px">CREATIVIDAD</Text>
+          </Box>
+          <Box
+          bg="#B3F4D5"
+            _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
+            textAlign="center"
+            p="13px"
+            borderRadius="15px"
+            height="65px"
+            width="235px"
+          >
+            <Text color="#DA6B6B" fontSize="25px">COMPROMISO</Text>
+          </Box>
+          <Box
+          bg="#99DAFF"
+            _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
+            textAlign="center"
+            p="13px"
+            borderRadius="15px"
+            height="65px"
+            width="235px"
+          >
+            <Text color="#DA6B6B" fontSize="25px">DETERMINACIÓN</Text>
+          </Box>
+          <Box
+          bg="#EAC9FF"
+            _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
+            textAlign="center"
+            p="13px"
+            borderRadius="15px"
+            height="65px"
+            width="235px"
+          >
+            <Text color="#DA6B6B" fontSize="25px">ORGANIZACIÓN</Text>
+          </Box>
+          <Box
+          bg="#E7EDA2"
+            _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
+            textAlign="center"
+            p="13px"
+            borderRadius="15px"
+            height="65px"
+            width="235px"
+          >
+            <Text color="#DA6B6B" fontSize="25px">EMPATIA</Text>
           </Box>
           <Box
             _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
             textAlign="center"
             p="13px"
-            bg="#D0A2ED"
+            bg="#B3F4D5"
             borderRadius="15px"
             height="65px"
             width="235px"
           >
-            <Text fontSize="25px">CREATIVIDAD</Text>
+            <Text color="#DA6B6B" fontSize="25px">HUMILDAD</Text>
           </Box>
           <Box
             _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
             textAlign="center"
             p="13px"
-            border="2px solid #D0A2ED"
+            bg="#99DAFF"
             borderRadius="15px"
             height="65px"
             width="235px"
           >
-            <Text fontSize="25px">COMPROMISO</Text>
-          </Box>
-          <Box
-            _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
-            textAlign="center"
-            p="13px"
-            border="2px solid #D0A2ED"
-            borderRadius="15px"
-            height="65px"
-            width="235px"
-          >
-            <Text fontSize="25px">DETERMINACIÓN</Text>
-          </Box>
-          <Box
-            _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
-            textAlign="center"
-            p="13px"
-            border="2px solid #D0A2ED"
-            borderRadius="15px"
-            height="65px"
-            width="235px"
-          >
-            <Text fontSize="25px">LIDERAZGO</Text>
-          </Box>
-          <Box
-            _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
-            textAlign="center"
-            p="13px"
-            border="2px solid #D0A2ED"
-            borderRadius="15px"
-            height="65px"
-            width="235px"
-          >
-            <Text fontSize="25px">EMPATIA</Text>
-          </Box>
-          <Box
-            _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
-            textAlign="center"
-            p="13px"
-            bg="#D0A2ED"
-            borderRadius="15px"
-            height="65px"
-            width="235px"
-          >
-            <Text fontSize="25px">HUMILDAD</Text>
-          </Box>
-          <Box
-            _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
-            textAlign="center"
-            p="13px"
-            bg="#D0A2ED"
-            borderRadius="15px"
-            height="65px"
-            width="235px"
-          >
-            <Text fontSize="25px">AMBICIÓN</Text>
+            <Text color="#DA6B6B" fontSize="25px">AMBICIÓN</Text>
           </Box>
         </SimpleGrid>
       </VStack>
@@ -680,13 +696,13 @@ function App() {
         <Heading
           mt="110px"
           mb="10px"
-          color="#FFFFFF"
+          color="#447CBE"
           fontSize="40px"
           fontWeight="normal"
         >
           EXPERIENCIAS PREVIAS
         </Heading>
-        <SimpleGrid columns={3} spacing={10}>
+        <SimpleGrid columns={2} spacing={250}>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
             height="335px"
@@ -696,13 +712,13 @@ function App() {
               marginLeft="15px"
               borderRadius="15px"
               width="205px"
-              height="235px"
+              height="200px"
               src={Exp1}
             ></Img>
-            <Text textAlign="center">
-              administrador y asesor de finanzas. <br></br> *coliderar equipo{" "}
-              <br></br> *balances <br></br>
-              *presupuestos <br></br> *toma de decisiones
+            <Text fontSize="25px" textAlign="center">
+             Diseñadora grafica:<br></br>
+             * Arte Digital.<br></br>
+             * Adaptacion a los cambios.
             </Text>
           </Box>
           <Box
@@ -714,37 +730,20 @@ function App() {
               marginLeft="15px"
               borderRadius="15px"
               width="205px"
-              height="235px"
+              height="200px"
               src={Exp2}
             ></Img>
-            <Text textAlign="center">
-              Inspector técnico automotriz.<br></br> *atencion al cliente.
-              <br></br> *Inspeccion en base a la ley de transito.
-            </Text>
-          </Box>
-          <Box
-            _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="335px"
-            width="235px"
-          >
-            <Img
-              marginLeft="15px"
-              borderRadius="15px"
-              width="205px"
-              height="235px"
-              src={Exp3}
-            ></Img>
-            <Text textAlign="center">
-              Operario de producción en máquinas CNC.<br></br> *Calidad/Cantidad
-              <br></br>
-              *Adaptacion "horarios rotativos"
+            <Text fontSize="25px" textAlign="center">
+              Polleria Plumitas: <br></br>
+              * Acencion al cliente.<br></br>
+              * Responsabilidad.<br></br>* Compromiso.<br></br>
             </Text>
           </Box>
         </SimpleGrid>
         <Heading
           mt="110px"
           mb="10px"
-          color="#FFFFFF"
+          color="#447CBE"
           fontSize="40px"
           fontWeight="normal"
         >
@@ -764,7 +763,8 @@ function App() {
               src={cert1}
             ></Img>
             <Text textAlign="center">
-            Full Stack Web Developer. Henry Bootcamp. 700 horas de cursado teórico-práctico.
+              Full Stack Web Developer. Henry Bootcamp. 700 horas de cursado
+              teórico-práctico.
             </Text>
           </Box>
           <Box
@@ -780,7 +780,7 @@ function App() {
               src={cert2}
             ></Img>
             <Text textAlign="center">
-            EF SET English Certificate 39/100 (A2 Elementary)
+              EF SET English Certificate 39/100 (A2 Elementary)
             </Text>
           </Box>
           <Box
@@ -796,7 +796,7 @@ function App() {
               src={cert3}
             ></Img>{" "}
             <Text textAlign="center">
-            Curso “Diseño de paginas web con HTML y CSS” (10hs) Crehana
+              Curso “Diseño de paginas web con HTML y CSS” (10hs) Crehana
             </Text>
           </Box>
           <Box
@@ -812,40 +812,52 @@ function App() {
               src={cert3}
             ></Img>
             <Text textAlign="center">
-            Curso “jira para empresas” (2hs) Crehana
+              Curso “jira para empresas” (2hs) Crehana
             </Text>
           </Box>
         </SimpleGrid>
-        <HStack gap="70px" color="#FFFFFF">
-          <ArrowLeftIcon  _hover={{
+        <HStack gap="70px" color="#447CBE">
+          <ArrowLeftIcon
+            _hover={{
               transform: "scale(1.65)",
               transition: "all 0.3s ease",
-            }} boxSize={8} /> <Text  _hover={{
+            }}
+            boxSize={8}
+          />{" "}
+          <Text
+            _hover={{
               transform: "scale(1.65)",
               transition: "all 0.3s ease",
-            }} fontSize="40px">1</Text>{" "}
-          <ArrowRightIcon  _hover={{
+            }}
+            fontSize="40px"
+          >
+            1
+          </Text>{" "}
+          <ArrowRightIcon
+            _hover={{
               transform: "scale(1.65)",
               transition: "all 0.3s ease",
-            }} boxSize={8} />{" "}
+            }}
+            boxSize={8}
+          />{" "}
         </HStack>
       </VStack>
       <VStack gap="15px" zIndex="1" h="874px" w="1000px">
-        <Heading mt="110px" mb="10px" color="#FFFFFF" fontSize="40px">
+        <Heading mt="110px" mb="10px" color="#447CBE" fontSize="40px">
           OTROS DATOS DE INTERES
         </Heading>
-        <Text color="#FFFFFF" width="810px" fontSize="25px">
-          * Idiomas: Español (Nativo) // Inglés (A2).<br></br>* Secundario
-          técnico completo cursado en “IPEM 247 ing. Carlos A. Cassaffousth”
-          Orientación: Técnico en automotores.<br></br>* Disponibilidad
-          Presencial, remoto o híbrido (Ciudad de Córdoba, Córdoba, ARG) //
-          Movilidad propia (moto) <br></br>* En constante capacitacion y
-          actualizacion de soft y tech skills
+        <Text color="black" width="810px" fontSize="25px">
+
+        * Idiomas: Español (Nativo) // Inglés (C2).<br></br>
+* Secundario completo cursado en “IPEM Nº 165 Pbro. Jose Bonoris”.Orientación: Arte y Multimedia.<br></br>
+* Disponibilidad Presencial, remoto o híbrido (Ciudad de Córdoba, Córdoba, ARG).<br></br>
+* En constante capacitacion y actualizacion de soft y tech skills.
+
         </Text>
         <Heading color="#9C6FB7" fontSize="40px">
           CONTACTO
         </Heading>
-        <iframe style={{border:'2px solid #9C6FB7', borderRadius:'10px'}} src="https://docs.google.com/forms/d/e/1FAIpQLSfIGuUmD_xMwo2dDO_yq6-NgG18cFgE3QiEOzC08MZ88CktoA/viewform?embedded=true" width="640" height="844" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        <iframe style={{ border: "2px solid #9C6FB7", borderRadius: "10px" }} src="https://docs.google.com/forms/d/e/1FAIpQLSfksNthen6-TAG9qr4wU57D407nUwun92RH2ffOeNsZ_-wOpA/viewform?embedded=true" width="640" height="709" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
         {/* <VStack width="660px">
           <HStack width="100%">
             <Input placeholder="Nombre"></Input>{" "}
@@ -865,53 +877,60 @@ function App() {
         </VStack> */}
       </VStack>
       <SimpleGrid pt="30px" columns={4} spacing={50}>
-        <a href="https://wa.me/543513851480">
-        <Box 
-          _hover={{ transform: "scale(1.3)", transition: "all 0.3s ease" }}
-          borderRadius="15px"
-          height="70px"
-          width="80px"
-        >
-          <Image src={fot1} w="100%" h="100%"></Image>
-        </Box>
+        
+       
+        <a href="https://www.linkedin.com/in/abelmoreno97/">
+          <Box
+            _hover={{ transform: "scale(1.3)", transition: "all 0.3s ease" }}
+            borderRadius="15px"
+            height="70px"
+            width="80px"
+          >
+            <Image src={fot3} w="100%" h="100%"></Image>
+          </Box>
+        </a>
+        <a href="https://github.com/Abelmoreno97">
+          <Box
+            _hover={{ transform: "scale(1.3)", transition: "all 0.3s ease" }}
+            borderRadius="15px"
+            height="70px"
+            width="80px"
+          >
+            <Image src={fot4} w="100%" h="100%"></Image>
+          </Box>
         </a>
 
         <Popover>
-  <PopoverTrigger>
-    <Button bg="#D0A2ED"
-    p="0px"
-     _hover={{ transform: "scale(1.3)", transition: "all 0.3s ease" }}
-          borderRadius="15px"
-          height="70px"
-          width="80px"><Image src={fot2} w="100%" h="100%"></Image></Button>
-  </PopoverTrigger>
-  <PopoverContent>
-    <PopoverArrow />
-    <PopoverCloseButton />
-    <PopoverHeader>Contacto via E-mail</PopoverHeader>
-    <PopoverBody>abelyamilmorenomp@gmail.com</PopoverBody>
-  </PopoverContent>
-</Popover>
+          <PopoverTrigger>
+            <Button
+            bg="#2068BC"
+              p="0px"
+              _hover={{ transform: "scale(1.3)", transition: "all 0.3s ease" }}
+              borderRadius="15px"
+              height="70px"
+              width="80px"
+            >
+              <Image src={fot2} w="100%" h="100%"></Image>
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent>
+            <PopoverArrow />
+            <PopoverCloseButton />
+            <PopoverHeader>Contacto via E-mail</PopoverHeader>
+            <PopoverBody>abelyamilmorenomp@gmail.com</PopoverBody>
+          </PopoverContent>
+        </Popover>
 
-        <a href="https://www.linkedin.com/in/abelmoreno97/">
-        <Box
-          _hover={{ transform: "scale(1.3)", transition: "all 0.3s ease" }}
-          borderRadius="15px"
-          height="70px"
-          width="80px"
-        >
-          <Image src={fot3} w="100%" h="100%"></Image>
-        </Box>
-        </a>
-        <a href="https://github.com/Abelmoreno97">
-        <Box
-          _hover={{ transform: "scale(1.3)", transition: "all 0.3s ease" }}
-          borderRadius="15px"
-          height="70px"
-          width="80px"
-        >
-          <Image src={fot4} w="100%" h="100%"></Image>
-        </Box>
+
+        <a href="https://wa.me/543513851480">
+          <Box
+            _hover={{ transform: "scale(1.3)", transition: "all 0.3s ease" }}
+            borderRadius="15px"
+            height="70px"
+            width="80px"
+          >
+            <Image src={fot1} w="100%" h="100%"></Image>
+          </Box>
         </a>
       </SimpleGrid>
     </VStack>
