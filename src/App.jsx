@@ -156,40 +156,45 @@ function App() {
   return (
     // FONDO
     <VStack style={{ height: "5120px" }}>
-      <HStack
-        pt="40px"
+         <HStack
+      flexDirection={["column","column","row","row"]}
+        pt={["20px","20px","40px"]}
         pb="20px"
         top={0}
         w="100%"
         justifyContent="center"
-        gap="100px"
         id="nav"
         className={isScrolled ? "scrolled" : ""}
         zIndex="10"
         position="fixed"
       >
-        <a id="link" className="volver-arriba" href="#">
-          ACERCA DE
+<HStack  justifyContent={["center","center","flex-end","flex-end"]} >
+        <a style={{ padding:'0px 20px' }} id="link" className="volver-arriba" href="#">
+          INICIO
         </a>
-        <a id="link" className="scroll-suave" href="#sec2">
+        <a style={{ padding:'0px 20px' }} id="link" className="scroll-suave" href="#sec2">
           PROYECTOS
         </a>
-        <a id="link" className="scroll-suave" href="#sec3">
+        <a style={{ padding:'0px 20px' }} id="link" className="scroll-suave" href="#sec3">
           SKILLS
         </a>
-        <a id="link" className="scroll-suave" href="#sec4">
+</HStack>
+<HStack  justifyContent={["center","center","flex-start","flex-start"]} >
+        <a style={{ padding:'0px 20px' }} id="link" className="scroll-suave" href="#sec4">
           EXPERIENCIA
         </a>
-        <a id="link" className="scroll-suave" href="#sec5">
+        <a style={{ padding:'0px 20px' }} id="link" className="scroll-suave" href="#sec5">
           CONTACTO
         </a>
+</HStack>
+
       </HStack>
       <Box w="100%">
         <Image
           top={0}
           src={foto}
           alt="My Image"
-          height="600px"
+          height={["400px","500px","600px","600px","600px"]}
           width="100%"
           position="absolute"
           zIndex="-2"
@@ -197,7 +202,17 @@ function App() {
         />
 
         <Image
-          top="1045px"
+          top={["1100px","1100px","1000px"]}
+          src={Fondoverdeagua}
+          alt="My Image"
+          height="1030px"
+          width="100%"
+          position="absolute"
+          zIndex="-2"
+          objectFit="cover"
+        />
+<Image
+          top={["2000px","1900px","1000px","1000px","1000px"]}
           src={Fondoverdeagua}
           alt="My Image"
           height="1030px"
@@ -208,34 +223,34 @@ function App() {
         />
         <Heading
           id="sec2"
-          top="1140px"
+          top={["1100px","1100px","1050px","1140px","1140px"]}
           width="100%"
           position="absolute"
           zIndex="-3"
         ></Heading>
         <Heading
           id="sec3"
-          top="2180px"
+          top={["3050px","3050px","2100px","2180px","2180px"]}
           width="100%"
           position="absolute"
           zIndex="-3"
         ></Heading>
         <Heading
           id="sec4"
-          top="3200px"
+          top={["4650px","4650px","3640px","3200px","3200px"]}
           width="100%"
           position="absolute"
           zIndex="-3"
         ></Heading>
         <Heading
           id="sec5"
-          top="4250px"
+          top={["7250px","7250px","5300px","4300px","4300px"]}
           width="100%"
           position="absolute"
           zIndex="-3"
         ></Heading>
         <Image
-          top="3110px"
+          top={["4650px","4650px","3510px","3110px","3110px"]}
           src={Fondonaranja}
           alt="My Image"
           height="1030px"
@@ -245,7 +260,7 @@ function App() {
           objectFit="cover"
         />
         <Image
-          top="3530px"
+          top={["5675px","5675px","4535px","3550"]}
           src={Fondonaranja}
           alt="My Image"
           height="1030px"
@@ -255,7 +270,18 @@ function App() {
           objectFit="cover"
         />
         <Image
-          top="5020px"
+          top={["6600px","6500px","4600px","3550"]}
+          src={Fondonaranja}
+          alt="My Image"
+          height="1030px"
+          width="100%"
+          position="absolute"
+          zIndex="-2"
+          objectFit="cover"
+        />
+
+        <Image
+          top={["8050px","7980px","6040px", "5020px"]}
           src={footer}
           alt="My Image"
           height="150px"
@@ -267,14 +293,14 @@ function App() {
       </Box>
 
       {/* FRENTE */}
-      <VStack id="section-1" zIndex="1" h="1024px" w="1000px">
-        <Image src={nombre} w="497px" h="192px" mt="204px" mb="80px"></Image>
+      <VStack id="section-1" zIndex="1" h="1024px" w={["100%","100%","100%","1000px"]}>
+        <Image src={nombre} w={["330px","410px","488px","488px"]} h="192px" mt={["120px","100px","204px","204px","204px"]} mb="40px"></Image>
         <Image src={about} w="237px" h="237px"></Image>
         <Heading
           color="#9C6FB7">
           Acerca de
         </Heading>
-        <Text textAlign="center" width="830px" fontSize="20px">
+        <Text textAlign="center" width={["400px","480px","800px","830px","830px"]} fontSize="20px">
         Full Stack Developer con background en Diseño Gráfico donde aprendí a adaptarme al requerimiento del cliente sobre la marcha, así como habilidades artísticas y de creatividad.<br></br>
 
 Conocimientos en metodologías ágiles, GIT, estructura de datos, algoritmos, frameworks CSS, Adobe Photoshop, Adobe illustrator y programas de edición de audio y videos. Tengo experiencia en desarrollo de Front End y Back End con SQL, HTML, CSS, ChakraUI, Javascript, NodeJS, EXPRESS, React, React-Native, Redux, entre otros.<br></br>
@@ -284,11 +310,11 @@ Con capacidad de mantener un ambiente de trabajo organizado, adaptarme a diverso
 Nivel de Inglés: C2 (Proficient).
         </Text>
       </VStack>
-      <VStack id="section-2" gap="10px" zIndex="1" h="1024px" w="1000px">
+      <VStack id="section-2" gap="10px" zIndex="1" h={["2000px","2000px","1024px","1024px"]} w={["100%","100%","100%","1000px"]}>
         <Heading fontSize="40px" color="#447CBE" mt="90px" mb="10px">
           PROYECTOS
         </Heading>
-        <HStack justifyContent="space-between" width="830px">
+        <HStack justifyContent="center" flexDirection={["column","column","row","row","row"]} gap="100px" w={["100%","100%","100%","1000px"]}>
           <a target="_blank" href="https://foods.up.railway.app/">
             <VStack
               borderRadius="20px"
@@ -335,10 +361,10 @@ Nivel de Inglés: C2 (Proficient).
             </VStack>
           </a>
         </HStack>
-        <HStack justifyContent="space-between" width="830px">
+        <HStack justifyContent="center" flexDirection={["column","column","row","row","row"]} gap="100px" w={["100%","100%","100%","1000px"]}>
         <a
             target="_blank"
-            href="https://www.figma.com/file/HaHM7NwaJeSCB5kDn11yM2/Portfolio-Abel?node-id=1-2&t=6x7RsMFQjVr1Bd7D-0"
+            href="https://199-bucket.s3.sa-east-1.amazonaws.com/index.html"
           >
             <VStack
               borderRadius="20px"
@@ -363,7 +389,7 @@ Nivel de Inglés: C2 (Proficient).
           </a>
           <a
             target="_blank"
-            href="https://www.figma.com/file/iuyz0eXd9MVXr03tHYsVTP/Portfolio-Nicole?node-id=2-2&t=xXia3H3UIHrubmAt-0"
+            href="https://200-bucket.s3.sa-east-1.amazonaws.com/index.html"
           >
             <VStack
               borderRadius="20px"
@@ -414,142 +440,142 @@ Nivel de Inglés: C2 (Proficient).
           />{" "}
         </HStack>
       </VStack>
-      <VStack zIndex="1" gap="15px" h="1024px" w="1000px">
-        <Heading mt="110px" mb="10px" color="#9C6FB7" fontSize="40px">
+      <VStack zIndex="1" gap={["80px","15px"]} h={["1600px","1600px","1600px", "1024px"]} w={["100%","100%","100%","1000px"]}>
+        <Heading mt={["220px","180px","180px","110px","110px"]} mb="10px" color="#9C6FB7" fontSize="40px">
           SKILLS
         </Heading>
         <Heading mb="20px" fontSize="35px" color="#DA6B6B" fontWeight="normal">
           TECNOLOGIAS
         </Heading>
 
-        <SimpleGrid columns={6} spacing={19}>
+        <SimpleGrid style={{ justifyContent: "center" }} columns={[3,3,4,6]} spacing={19}>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img borderRadius="15px" width="100%" height="100%" src={Te1}></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img borderRadius="15px" width="100%" height="100%" src={Te2}></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img borderRadius="15px" width="100%" height="100%" src={Te3}></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img borderRadius="15px" width="100%" height="100%" src={Te4}></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img borderRadius="15px" width="100%" height="100%" src={Te5}></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img borderRadius="15px" width="100%" height="100%" src={Te6}></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img borderRadius="15px" width="100%" height="100%" src={Te7}></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img borderRadius="15px" width="100%" height="100%" src={Te8}></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img borderRadius="15px" width="100%" height="100%" src={Te9}></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img
               borderRadius="15px"
-              width="100%"
-              height="100%"
+              height={["95px","140px"]}
+              width={["100px","150px"]}
               src={Te10}
             ></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img
               borderRadius="15px"
-              width="100%"
-              height="100%"
+              height={["95px","140px"]}
+            width={["100px","150px"]}
               src={Te11}
             ></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img
               borderRadius="15px"
-              width="100%"
-              height="100%"
+              height={["95px","140px"]}
+            width={["100px","150px"]}
               src={Te12}
             ></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img
               borderRadius="15px"
-              width="100%"
-              height="100%"
+              height={["95px","140px"]}
+            width={["100px","150px"]}
               src={Te13}
             ></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img
               borderRadius="15px"
-              width="100%"
-              height="100%"
+              height={["95px","140px"]}
+            width={["100px","150px"]}
               src={Te14}
             ></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img
               borderRadius="15px"
@@ -560,37 +586,37 @@ Nivel de Inglés: C2 (Proficient).
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img
               borderRadius="15px"
-              width="100%"
-              height="100%"
+              height={["95px","140px"]}
+            width={["100px","150px"]}
               src={Te16}
             ></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img
               borderRadius="15px"
-              width="100%"
-              height="100%"
+              height={["95px","140px"]}
+            width={["100px","150px"]}
               src={Te17}
             ></Img>
           </Box>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
-            height="140px"
-            width="150px"
+            height={["95px","140px"]}
+            width={["100px","150px"]}
           >
             <Img
               borderRadius="15px"
-              width="100%"
-              height="100%"
+              height={["95px","140px"]}
+              width={["100px","150px"]}
               src={Te18}
             ></Img>
           </Box>
@@ -599,74 +625,73 @@ Nivel de Inglés: C2 (Proficient).
           HABILIDADES BLANDAS
         </Heading>
 
-        <SimpleGrid columns={4} spacing={19}>
+        <SimpleGrid columns={[2,2,2,4]} spacing={19}>
           <Box
             _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
             textAlign="center"
             p="13px"
             bg="#EAC9FF"
             borderRadius="15px"
-            height="65px"
-            width="235px"
+            height={["50px","65px"]}
+            width={["190px","235px"]}
           >
             {" "}
-            <Text color="#DA6B6B" fontSize="25px">INGENIO</Text>{" "}
+            <Text fontSize={["20px","25px"]}>INGENIO</Text>{" "}
           </Box>
           <Box
-          
             _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
             textAlign="center"
             p="13px"
             bg="#E7EDA2"
             borderRadius="15px"
-            height="65px"
-            width="235px"
+            height={["50px","65px"]}
+            width={["190px","235px"]}
           >
-            <Text color="#DA6B6B" fontSize="25px">CREATIVIDAD</Text>
+            <Text fontSize={["20px","25px"]}>CREATIVIDAD</Text>
           </Box>
           <Box
-          bg="#B3F4D5"
             _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
+            bg="#B3F4D5"
             textAlign="center"
             p="13px"
             borderRadius="15px"
-            height="65px"
-            width="235px"
+            height={["50px","65px"]}
+            width={["190px","235px"]}
           >
-            <Text color="#DA6B6B" fontSize="25px">COMPROMISO</Text>
+            <Text fontSize={["20px","25px"]}>COMPROMISO</Text>
           </Box>
           <Box
-          bg="#99DAFF"
             _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
+            bg="#99DAFF"
             textAlign="center"
             p="13px"
             borderRadius="15px"
-            height="65px"
-            width="235px"
+            height={["50px","65px"]}
+            width={["190px","235px"]}
           >
-            <Text color="#DA6B6B" fontSize="25px">DETERMINACIÓN</Text>
+            <Text fontSize={["20px","25px"]}>DETERMINACIÓN</Text>
           </Box>
           <Box
-          bg="#EAC9FF"
             _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
+            bg="#EAC9FF"
             textAlign="center"
             p="13px"
             borderRadius="15px"
-            height="65px"
-            width="235px"
+            height={["50px","65px"]}
+            width={["190px","235px"]}
           >
-            <Text color="#DA6B6B" fontSize="25px">ORGANIZACIÓN</Text>
+            <Text fontSize={["20px","25px"]}>ORGANIZACION</Text>
           </Box>
           <Box
-          bg="#E7EDA2"
             _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
+            bg="#E7EDA2"
             textAlign="center"
             p="13px"
             borderRadius="15px"
-            height="65px"
-            width="235px"
+            height={["50px","65px"]}
+            width={["190px","235px"]}
           >
-            <Text color="#DA6B6B" fontSize="25px">EMPATIA</Text>
+            <Text fontSize={["20px","25px"]}>EMPATIA</Text>
           </Box>
           <Box
             _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
@@ -674,10 +699,10 @@ Nivel de Inglés: C2 (Proficient).
             p="13px"
             bg="#B3F4D5"
             borderRadius="15px"
-            height="65px"
-            width="235px"
+            height={["50px","65px"]}
+            width={["190px","235px"]}
           >
-            <Text color="#DA6B6B" fontSize="25px">HUMILDAD</Text>
+            <Text fontSize={["20px","25px"]}>HUMILDAD</Text>
           </Box>
           <Box
             _hover={{ transform: "scale(1.15)", transition: "all 0.3s ease" }}
@@ -685,24 +710,23 @@ Nivel de Inglés: C2 (Proficient).
             p="13px"
             bg="#99DAFF"
             borderRadius="15px"
-            height="65px"
-            width="235px"
+            height={["50px","65px"]}
+            width={["190px","235px"]}
           >
-            <Text color="#DA6B6B" fontSize="25px">AMBICIÓN</Text>
+            <Text fontSize={["20px","25px"]}>AMBICIÓN</Text>
           </Box>
         </SimpleGrid>
       </VStack>
-      <VStack gap="20px" zIndex="1" h="1024px" w="1000px">
+      <VStack  gap="20px" zIndex="1" h={["2500px","2500px","1700px","1024px"]} w={["100%","100%","100%","1000px"]}>
         <Heading
-          mt="110px"
+          mt={["220px","180px","180px","110px","110px"]}
           mb="10px"
           color="#447CBE"
-          fontSize="40px"
           fontWeight="normal"
         >
           EXPERIENCIAS PREVIAS
         </Heading>
-        <SimpleGrid columns={2} spacing={250}>
+        <SimpleGrid columns={[1,1,1,2,2]} spacing={[100,100,100,250,250]}>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
             height="335px"
@@ -749,7 +773,7 @@ Nivel de Inglés: C2 (Proficient).
         >
           CERTIFICADOS
         </Heading>
-        <SimpleGrid columns={4} spacing={5}>
+        <SimpleGrid columns={[1,1,2,4]} spacing={5}>
           <Box
             _hover={{ transform: "scale(1.20)", transition: "all 0.3s ease" }}
             height="260px"
@@ -842,11 +866,11 @@ Nivel de Inglés: C2 (Proficient).
           />{" "}
         </HStack>
       </VStack>
-      <VStack gap="15px" zIndex="1" h="874px" w="1000px">
-        <Heading mt="110px" mb="10px" color="#447CBE" fontSize="40px">
+      <VStack gap="15px" zIndex="1" h={["1170px","1140px","850px","874px"]} w={["100%","100%","100%","1000px"]}>
+        <Heading mt={["190px","250px","110px","110px"]} mb="10px" fontSize={["30px","30px","40px"]} color="#447CBE">
           OTROS DATOS DE INTERES
         </Heading>
-        <Text color="black" width="810px" fontSize="25px">
+        <Text color="#FFFFFF" width={["380pxpx","500px","600px","810px"]}  fontSize={["25px"]}>
 
         * Idiomas: Español (Nativo) // Inglés (C2).<br></br>
 * Secundario completo cursado en “IPEM Nº 165 Pbro. Jose Bonoris”.Orientación: Arte y Multimedia.<br></br>
@@ -857,7 +881,9 @@ Nivel de Inglés: C2 (Proficient).
         <Heading color="#9C6FB7" fontSize="40px">
           CONTACTO
         </Heading>
-        <iframe style={{ border: "2px solid #9C6FB7", borderRadius: "10px" }} src="https://docs.google.com/forms/d/e/1FAIpQLSfksNthen6-TAG9qr4wU57D407nUwun92RH2ffOeNsZ_-wOpA/viewform?embedded=true" width="640" height="709" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        <Box w={["380px","470px","660px","660px"]} h={["500px","500px","500px","800px","800px"]}>
+        <iframe style={{ border: "2px solid #9C6FB7", borderRadius: "10px" }} src="https://docs.google.com/forms/d/e/1FAIpQLSfksNthen6-TAG9qr4wU57D407nUwun92RH2ffOeNsZ_-wOpA/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </Box>
         {/* <VStack width="660px">
           <HStack width="100%">
             <Input placeholder="Nombre"></Input>{" "}
@@ -879,22 +905,22 @@ Nivel de Inglés: C2 (Proficient).
       <SimpleGrid pt="30px" columns={4} spacing={50}>
         
        
-        <a href="https://www.linkedin.com/in/abelmoreno97/">
+        <a target="_blank" href="https://www.linkedin.com/in/nicolea4/">
           <Box
             _hover={{ transform: "scale(1.3)", transition: "all 0.3s ease" }}
             borderRadius="15px"
-            height="70px"
-            width="80px"
+            height="65px"
+            width="75px"
           >
             <Image src={fot3} w="100%" h="100%"></Image>
           </Box>
         </a>
-        <a href="https://github.com/Abelmoreno97">
+        <a target="_blank" href="https://github.com/nicolea413">
           <Box
             _hover={{ transform: "scale(1.3)", transition: "all 0.3s ease" }}
             borderRadius="15px"
-            height="70px"
-            width="80px"
+            height="65px"
+            width="75px"
           >
             <Image src={fot4} w="100%" h="100%"></Image>
           </Box>
@@ -907,8 +933,8 @@ Nivel de Inglés: C2 (Proficient).
               p="0px"
               _hover={{ transform: "scale(1.3)", transition: "all 0.3s ease" }}
               borderRadius="15px"
-              height="70px"
-              width="80px"
+              height="65px"
+              width="75px"
             >
               <Image src={fot2} w="100%" h="100%"></Image>
             </Button>
@@ -917,17 +943,17 @@ Nivel de Inglés: C2 (Proficient).
             <PopoverArrow />
             <PopoverCloseButton />
             <PopoverHeader>Contacto via E-mail</PopoverHeader>
-            <PopoverBody>abelyamilmorenomp@gmail.com</PopoverBody>
+            <PopoverBody>nicolea413@gmail.com</PopoverBody>
           </PopoverContent>
         </Popover>
 
 
-        <a href="https://wa.me/543513851480">
+        <a target="_blank" href="https://wa.me/543525650654">
           <Box
             _hover={{ transform: "scale(1.3)", transition: "all 0.3s ease" }}
             borderRadius="15px"
-            height="70px"
-            width="80px"
+            height="65px"
+          width="75px"
           >
             <Image src={fot1} w="100%" h="100%"></Image>
           </Box>
